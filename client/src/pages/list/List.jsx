@@ -23,7 +23,7 @@ const List = () => {
 
 
   const { data, loading, reFetch } = useFetch(
-    `/api/hotels?city=${destination}&min=${min || 0 }&max=${max || 999}`);
+    `https://stay-buddy.onrender.com/api/hotels?city=${destination}&min=${min || 0 }&max=${max || 999}`);
     console.log(data);
 
 

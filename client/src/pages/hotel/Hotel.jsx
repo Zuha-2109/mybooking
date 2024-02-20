@@ -26,7 +26,7 @@ const Hotel = () => {
   const [open, setOpen] = useState(false);
 
   const { data, loading } = useFetch(
-    `/api/hotels/find/${id}`);
+    `https://stay-buddy.onrender.com/api/hotels/find/${id}`);
 
     const { user } = useContext(AuthContext);
   const navigate = useNavigate();
