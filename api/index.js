@@ -11,7 +11,9 @@ import cookieParser from "cookie-parser";
 
 import cors from "cors";
 
-const app = express();
+const express = require("express")
+const app = express()
+const port = process.env.PORT || 4000;
 dotenv.config()
 
 // const cors = require('cors');
