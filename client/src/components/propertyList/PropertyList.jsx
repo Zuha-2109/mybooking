@@ -5,7 +5,7 @@ import useFetch from '../../hooks/useFetch';
 const PropertyList = () => {
 
 
-    const { data, loading, error } = useFetch(
+    const { data, loading } = useFetch(
         "/api/hotels/countByType"
         );
         const images = [
