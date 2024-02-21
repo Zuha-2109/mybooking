@@ -48,12 +48,12 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(cors()) ;// Use this after the variable declaration
 
-app.use("https://stay-buddy.onrender.com/api/auth", authRoute);
-app.use("https://stay-buddy.onrender.com/api/users", usersRoute);
+app.use("/api/auth", authRoute);
+app.use("/api/users", usersRoute);
 
-app.use("https://stay-buddy.onrender.com/api/hotels", hotelsRoute);
+app.use("/api/hotels", hotelsRoute);
 
-app.use("https://stay-buddy.onrender.com/api/rooms", roomsRoute);
+app.use("/api/rooms", roomsRoute);
 //this is next middleware
 
 
