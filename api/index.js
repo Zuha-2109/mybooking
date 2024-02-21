@@ -36,10 +36,10 @@ mongoose.connection.on("disconnected", () =>{
     console.log("MongoDB Connected!")
 })
 
-// app.get('/user',(req, res)=>{
+app.get('/',(req, res)=>{
 
-//     res.send("Hello World")
-// })
+    res.send("Welcome to StayBuddy !!")
+})
 
 //Middlewares - Important because its able to reach our request and response before sending anything to user
 
